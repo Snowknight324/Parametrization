@@ -24,11 +24,14 @@ Part by part explanation for code (Refer to program for numerical labels in the 
 
 6. Optimizer:
    Differential evolution is used to find a rough global minimum and L-BFGS-B is used to fine tune the algorithm around the minimum and prints the final optimized parameters
-   
+   80 generations are used in order to balance accuracy and processing time and auto fine tuning is disabled because fine tuning is done manually to improve the accuracy
+   L-BFGS-B is used after the rough global minimum is found to find a more accurate estimate in the neighbourhood. 400 iterations are used to balance accuracy and processing time and a stopping     tolerance of the magnitude 10^-12 is used to further increase accuracy
 
 8. Accuracy:
    Computes the RMS error
 
 8.Saving the results
-9.Computing L1 distance
+  Results are separately saved as a .txt file in the local server
   
+9.Computing L1 distance
+  Manhattan distance is used as another form of measuring accuracy along with RMS
