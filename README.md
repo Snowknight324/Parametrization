@@ -30,8 +30,8 @@ Part by part explanation for code (Refer to program for numerical labels in the 
 8. Accuracy:
    Computes the RMS error
 
-8.Saving the results
+8.Saving the results:
   Results are separately saved as a .txt file in the local server
   
-9.Computing L1 distance
+9.Computing L1 distance:
   Manhattan distance is used as another form of measuring accuracy along with RMS
